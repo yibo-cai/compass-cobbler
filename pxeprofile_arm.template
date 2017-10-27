@@ -1,0 +1,6 @@
+set timeout=5
+
+menuentry $profile_name {
+    linux (tftp)$kernel_path $append_line
+    initrd (tftp)$initrd_path
+}
